@@ -97,7 +97,7 @@ Configuration is managed through `appsettings.json`:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=.;Database=EnrollmentDashboardApplication;Trusted_Connection=true;"
+    "DefaultConnection": "Server=localhost;Database=EnrollmentSystem;Trusted_Connection=true;"
   },
   "Logging": {
     "LogLevel": {
@@ -213,5 +213,7 @@ public ActionResult Details(int id)
 2) Use Authorization for login purpose
 3) Make use of Observability tools to maintain codebase
 4) Inclde Serilog, I have just referenced serilog but I have not implemented.
+5) use middleare for exceptionhandling or use GlobalExceptionHandling
+6) use minimal api if required as they are fast
 
 ```
